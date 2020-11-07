@@ -1,5 +1,11 @@
-.header{
-    background-color: #EDDEDE;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    background-color: #F3EEEE;
 }
 
 /* HEADER NAV */
@@ -40,6 +46,7 @@ li.menu-button :hover{
     padding-top: 30px;
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 80px;
 }
 
 .header-content-text{
@@ -66,13 +73,100 @@ li.menu-button :hover{
     color: #fff;
     background-color: #ff4501;
     border: 0;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header-button:hover{
     background-color: #1E0505;
+    transition-duration: 0.5s;
 }
 
 .img-header{
     float: right;
 }
+
+/* FIRST SECTION */
+
+.section1-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px;
+    display: flex;
+    border-bottom: 4px solid #E6DBDB;
+}
+
+.section1-left{
+    width: 50%;
+}
+
+.section1-left-maintext{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.section1-left-helptext{
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 25px;
+    line-height: 1.3;
+    color: #000;    
+    width: 75%;
+}
+
+.section1-left-button{
+    margin-top: 40px;
+    padding: 10px 35px 10px 35px;
+    color:  #ff4501;
+    border: 2px solid;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.section1-left-button::after{
+    content: '';
+   position: absolute; bottom: 0; left: 0;
+   width: 100%;
+   height: 0;
+  
+   -webkit-transition: 0.3s;
+   transition: 0.3s;
+}
+
+.section1-left-button:hover:after{
+    height: 100%;
+    background-color: #ff4501;
+}
+
+.section1-right{
+    width: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    padding-bottom: 60px;
+}
+
+.first-icon-maintext{
+    font-weight: 600;
+    font-size: 25px;
+    color: #ff4501;
+    padding: 10px 0 5px 0;
+}
+
+.section1-right img{
+    width: 2.0em;
+}
+
+/* SECOND SECTION */
+
+.section2-wrapper{
+    height: 1000px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
