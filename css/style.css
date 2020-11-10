@@ -39,6 +39,10 @@ li.menu-button :hover{
     background-color: #ff4501;
 }
 
+li.menu-button a:active{
+    background-color: #ff4501;
+}
+
 /* HEADER CONTENT */
 
 .header-content-wrapper{
@@ -163,10 +167,160 @@ li.menu-button :hover{
 /* SECOND SECTION */
 
 .section2-wrapper{
-    height: 1000px;
     width: 80%;
     margin: 0 auto;
 }
 
+.section2-header-main{
+    padding-top: 70px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+}
 
+.section2-header-help{
+    padding-top: 20px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.hr2{
+    width: 15%;
+    margin-top: 20px;
+    height: 2px;
+    color: #ff4501;
+    background-color: #ff4501;
+}
+
+.section2-ul{
+    display:flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.section2-nav-button{
+    margin: 40px 20px;
+    list-style: none;
+}
+
+.section2-nav-button a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #848484;
+    font-weight: 500;
+}
+
+.section2-nav-button a:hover{
+    color: #30A6B1;
+}
+
+.section2-nav-button:focus{
+    color: #30A6B1;
+}
+
+.section2-img-wrapper{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+}
+
+/*THIRD SECTION*/
+
+.team-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.team-main{
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.team-help-text{
+    width: 40%;
+    color: #848484;
+    padding-left: 10px;
+}
+.hr3{
+    width: 30%;
+    margin-top: 20px;
+    height: 2px;
+    color: #ff4501;
+    background-color: #ff4501;
+}
+
+.photo-wrapper{
+    margin-top: 35px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.main-name{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.help-name{
+    margin-top: 25px;
+    width: 70%;
+    color: #848484;
+}
+
+.section3-ul{
+    display: flex;
+    padding: 0;
+}
+
+.team-social-button{
+    margin-top:10px;
+    padding-right: 20px;
+    list-style: none;
+}
+
+.team-social-button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #848484;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.team-social-button a:hover{
+    color: #ff4501;
+}
+
+.help-photo-wrapper{
+    display: grid;
+    height: 400px; /*test*/
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+}
+
+
+.help-photo{
+    position:relative;   
+}
+
+.test{
+    position:absolute;
+    display: none;
+    background-color: #000;
+    opacity: 60%;
+    width: 70%;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #ff3c01 ;
+    margin-top: -25px;
+}
+
+.help-photo:hover .test{
+    display: block;
+}
 
