@@ -253,6 +253,10 @@ li.menu-button a:active{
     background-color: #ff4501;
 }
 
+.main-photo{
+    
+}
+
 .photo-wrapper{
     margin-top: 35px;
     display: grid;
@@ -297,7 +301,6 @@ li.menu-button a:active{
 
 .help-photo-wrapper{
     display: grid;
-    height: 400px; /*test*/
     grid-template-rows: 1fr;
     grid-template-columns: 1fr  1fr 1fr 1fr;
 }
@@ -317,10 +320,87 @@ li.menu-button a:active{
     font-weight: 700;
     text-align: center;
     color: #ff3c01 ;
-    margin-top: -25px;
+    margin-top: -45px;
+    height: 35px;
+    line-height: 0.8;
+    padding-top: 5px;;
 }
 
 .help-photo:hover .test{
     display: block;
 }
 
+/*section 4*/
+
+.section4-wrapper{
+    
+    width: 80%;
+    margin: 0 auto;
+    background-image: url(background.jpg);
+}
+
+.section4-maintext{
+    margin-top: 90px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 90px;
+    text-align: center;
+}
+
+.section4-helptext{
+    color: #fff;
+    font-size: 14px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.section4-formbutton{
+    display: grid;
+    padding: 35px 0px 90px 0px;
+    width: 50%;
+    margin: 0 auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3vw;
+}
+
+.section4-form input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 20px;
+    margin-top: 3px;
+}
+
+.section4-subscribe{
+    position: relative;
+    display: inline-block;
+    color: #777674;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+    user-select: none;
+    padding: 1em 2em;
+    outline: none;
+    border-radius: 7px;
+    background-image:
+     linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+     linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+     linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+     linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+     linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+     linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+}
+
+.section4-subscribe:hover{
+    transition: .5s linear;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
